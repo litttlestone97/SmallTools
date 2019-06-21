@@ -1,0 +1,14 @@
+##批量使用NPM安装第三方库
+import os
+
+#libs为要安装的第三方库集合
+libs ={"mocha","webdriverio","chai","mysql","webdriver","thunkify","co"}
+try:
+	for lib in libs:
+		os.system("npm -g install "+lib)
+	print("Successful")
+except:
+	print("Failed")
+
+ 
+
